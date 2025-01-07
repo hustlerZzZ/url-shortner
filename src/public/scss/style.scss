@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+::-moz-selection {
+  background-color: #00ADB5;
+  color: #fff;
+}
+
+::selection {
+  background-color: #00ADB5;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Josefin Sans", serif;
+  color: #777;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+// Navbar
+.nav {
+  padding: 2rem;
+  background-color: #222831;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__items {
+    display: flex;
+
+    &--link {
+      color: #fff;
+      list-style: none;
+      font-size: 16px;
+      padding: 0 12px;
+      text-decoration: none;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--action {
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 32px;
+      font-weight: bold;
+      border-radius: 100px;
+      text-decoration: none;
+      background-color: #00ADB5;
+    }
+
+    &--action:hover {
+      background-color: #1ed0da;
+      transition: 0.2s ease background-color;
+    }
+  }
+}
+
+// Main
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #393E46;
+
+  &__main--heading {
+    width: 800px;
+    color: #EEEEEE;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+    @media screen and (min-width: 640px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 40px;
+    }
+
+    @media screen and (min-width: 1536px) {
+      font-size: 48px;
+    }
+  }
+
+  &__sub--heading {
+    color: #00ADB5;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+    @media screen and (min-width: 640px) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+    }
+  }
+}
