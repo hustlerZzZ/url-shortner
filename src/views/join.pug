@@ -1,0 +1,21 @@
+extends base
+
+block content
+    main
+        h1 Join Us
+        h2 Happy to have you here
+
+        form
+            div 
+                label(for="email" ) Your Email
+                input(type="text" id="email" placeholder="Your Email")
+
+            div 
+                label(for="password" ) Your Password
+                input(type="password" id="password" placeholder="Your Password")
+
+            button.button.button__state--success Join Us
+
+            div 
+                a(href="/sign-in") Already our user 
+                a(href="/forgot-password") Forgot your password ?
